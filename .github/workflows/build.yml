@@ -20,6 +20,7 @@ jobs:
       - name: Build APK with script
         run: |
           echo "city=Kyiv" > config.properties
+          echo "tmdb_key=cc4d074f09921694dc13082862c71d5d" >> config.properties
           export ANDROID_HOME=$ANDROID_SDK_ROOT
           chmod +x build.sh
           ./build.sh
